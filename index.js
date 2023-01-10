@@ -17,7 +17,7 @@ function myFunction() {
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+//In closures, variables and functions that are declared within a higher order function (in this case myFunction ) have the ability to reach outward for context. So, nestedFunction can access the internal variable from myFunction because it is nested within the function. 
 
 
 
@@ -30,11 +30,15 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  let count = 0;
+  return function(){
+    count = count + 1;
+    return count;
+  }
   }
  
+  console.log(summation);
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -75,9 +79,15 @@ const zooAnimals = [
   💡 NOTE: Do some research for other methods that can help help you
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+  function lowerCaseNames(array){
+    let namesArray = array.map( names => names.animal_name);
+    let lowerCased = namesArray.map (name => name.toLowerCase());
+    return lowerCased; 
+  };
+  
+  
+  
+  console.log(lowerCaseNames(zooAnimals)); 
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
