@@ -165,9 +165,11 @@ function multiply(num1, num2){
 💡 NOTE: The string returned must match the format above or the test will not pass!
 */
 
-function greeting(/*Your Code Here */){
-   return /*Your Code Here */
-  }
+function greeting(first, last){
+  return `Hello ${first} ${last}, nice to meet you!`
+ }
+
+console.log(greeting('Jaboris','Person')); 
   
   
 // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
@@ -191,8 +193,10 @@ function greeting(/*Your Code Here */){
 - Instances of CuboidMaker should initialize `length`, `width` and `height` properties
 */
 
-function CuboidMaker(/*Your Code Here */){
-  /*Your Code Here */
+function CuboidMaker({length, width, height}){
+  this.length = length;
+  this.width = width; 
+  this.height = height;
 }
 
 
