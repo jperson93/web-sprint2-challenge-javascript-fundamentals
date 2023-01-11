@@ -205,7 +205,9 @@ function CuboidMaker({length, width, height}){
   💡 NOTE: Formula for cuboid volume: length * width * height   
 */
 
-
+CuboidMaker.prototype.volume = function (vol){
+  return length * width * height; 
+}
 
 
 /* 🐴🐴🐴 Step 3: Surface Area Method 🐴🐴🐴
@@ -213,7 +215,9 @@ function CuboidMaker({length, width, height}){
   💡 NOTE: Formula for cuboid surface area: 2 * (length * width + length * height + width * height)  
 */
 
-
+CuboidMaker.prototype.surfaceArea = function (SA){
+  return 2* (length * width + length * height + width * height); 
+}
 
 
 /* 🐴🐴🐴 Step 4: Create a new object that uses CuboidMaker (not auto graded)🐴🐴🐴
