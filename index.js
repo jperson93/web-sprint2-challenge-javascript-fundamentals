@@ -30,15 +30,15 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(number) {
-  let count = 0;
-  return function(){
-    count = count + 1;
-    return count;
-  }
-  }
- 
-  console.log(summation);
+function summation(number){
+  let sum = 0;
+for (let i = 1; i <= number; i++) {
+    sum = sum + i;
+}
+return sum; 
+}
+console.log(summation(4)); 
+
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -241,13 +241,23 @@ const cuboid = {
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
 //Using CuboidMakerTwo, take your prototypes from above and refactor into class syntax. Then, create an object called cuboidTwo that uses the new keyword to use our CuboidMakerTwo class.
  
-class CuboidMakerTwo{
-constructor (length, width, height){
-  this.length = length;
-  this.width = width;
-  this.height;
+class CuboidMakerTwo {
+constructor (length2, width2, height2){
+  this.length2 = length2;
+  this.width2 = width2;
+  this.height2 = height2;
+}
+
+volume(){
+  return (this.length2 * this.width2* this.height2);
+}
+
+surfaceArea(){
+  return  2* (this.length2 * this.width2 + this.length2 * this.height2 + this.width2 * this.height2); 
 }
 }
+
+
 
 
 
