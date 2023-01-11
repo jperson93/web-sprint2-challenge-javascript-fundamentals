@@ -127,10 +127,11 @@ console.log(lowPopulationAnimals(zooAnimals));
     💡 NOTE: The tests for 'consume' will pass if it is created correctly and also after you correctly complete the functions 'add' and 'greeting' below in Step 2.
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
-  }
- 
+    function consume(a,b,cb){
+      return cb (a && b);
+    }
+  
+
   
   // 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁
 
@@ -139,9 +140,11 @@ console.log(lowPopulationAnimals(zooAnimals));
  2. Return the sum of those numbers
  */
 
-function add(/*Your Code Here */){
-    /*Your Code Here*/
-  }
+function add(num1,num2){
+  return num1 + num2;
+}
+
+console.log(add(5,7)); 
 
 
 /* Use multiply to do the following:
@@ -149,9 +152,11 @@ function add(/*Your Code Here */){
 2. Return the product of those numbers
 */
 
-function multiply(/*Your Code Here */){
-   /*Your Code Here */
+function multiply(num1, num2){
+   return num1 * num2;
   }
+
+  console.log(multiply(2,4));
 
 
  /* Use greeting to do the following:
