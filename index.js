@@ -140,7 +140,7 @@ console.log(USApop(zooAnimals));
   */
 
     function consume(a,b,cb){
-      return cb (a && b);
+      return cb(a,b);
     }
   
 
