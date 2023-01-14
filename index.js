@@ -64,9 +64,15 @@ const zooAnimals = [
   💡 NOTE: the array returned should be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+  function animalNames(array){
+    let displayNames = [];
+     zooAnimals.forEach(names => {
+       displayNames.push(`name: ` + names.animal_name +`,` +   ` scientific: ` + names.scientific_name);
+     });
+     return displayNames;
+   }
+   
+   console.log(animalNames(zooAnimals)); 
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
